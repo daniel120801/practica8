@@ -90,7 +90,7 @@ def movimientos():
     sql = """SELECT * FROM movimientos """  
     
     cursor.execute(sql)
-     registros = cursor.fetchall()
+    registros = cursor.fetchall()
 
 
     return render_template("movimientos.html", movs=registros)
