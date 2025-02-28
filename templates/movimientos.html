@@ -1,0 +1,19 @@
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID </th>
+            <th>monto </th>
+            <th>fecha </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for mov in movs %}
+        <tr>
+            <td>{{ mov.idMovimiento }}</td>
+            <td>{{ mov.monto }}</td>
+            <td>{{ mov.fechaHora }}</td>
+        </tr>
+    {% endfor %}
+    
+    </tbody>
+</table>

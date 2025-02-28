@@ -1,0 +1,21 @@
+<table class="table table-sm">
+    <thead class="table-active">
+        <tr>
+            <th>Id</th>
+            <th>fecha</th>
+            <th>etiqueta</th>
+            <th>Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for x in ahorros %}
+        <tr>
+            <td scope="col">{{ x.IdMovimientoEtiqueta }}</td>
+            <td scope="col">{{ x.fechaHora }}</td>  
+            <td scope="col">{{ x.nombreEtiqueta }}</td>
+            <td scope="col">{{ x.monto }}</td>
+        </tr>
+    {% endfor %}
+    
+    </tbody>
+</table>

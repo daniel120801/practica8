@@ -1,0 +1,17 @@
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID </th>
+            <th>nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for et in etiquetas %}
+        <tr>
+            <td>{{ et.idEtiqueta }}</td>
+            <td>{{ et.nombreEtiqueta }}</td>
+        </tr>
+    {% endfor %}
+    
+    </tbody>
+</table>
