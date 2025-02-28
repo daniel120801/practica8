@@ -16,28 +16,22 @@ app.config(function ($routeProvider, $locationProvider) {
     // y para las rutas
     $routeProvider
     .when("/", {
-        templateUrl: "/app",
-        controller: "appCtrl"
+        templateUrl: "/app"
     })
     .when("/productos", {
-        templateUrl: "/productos",
-        controller: "productosCtrl"
+        templateUrl: "/productos"
     })
     .when("/alumnos", {
-        templateUrl: "/alumnos",
-        controller: "alumnosCtrl"
+        templateUrl: "/alumnos"
     })
     .when("/ventas", {
-        templateUrl: "/ventas",
-        controller: "ventasCtrl"
+        templateUrl: "/ventas"
     })
     .when("/reportes", {
-        templateUrl: "/reportes",
-        controller: "reportesCtrl"
+        templateUrl: "/reportes"
     })
     .when("/notificaciones", {
-        templateUrl: "/notificaciones",
-        controller: "notificacionesCtrl"
+        templateUrl: "/notificaciones"
     })
     .otherwise({
         redirectTo: "/"
@@ -82,21 +76,6 @@ app.run(["$rootScope", "$location", "$timeout", function($rootScope, $location, 
     })
 }])
 
-// Hay que modificarlo para los controladores
-app.controller("appCtrl", function ($scope, $http) {
-    // alert("Hola, soy el controlador app")
-})
-app.controller("productosCtrl", function ($scope, $http) {
-    // alert("Hola, soy el controlador productos")
-})
-app.controller("alumnosCtrl", function ($scope, $http) {
-})
-app.controller("ventasCtrl", function ($scope, $http) {
-})
-app.controller("reportesCtrl", function ($scope, $http) {
-})
-app.controller("notificacionesCtrl", function ($scope, $http) {
-})
 
 const DateTime = luxon.DateTime
 let lxFechaHora
