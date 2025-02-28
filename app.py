@@ -87,9 +87,10 @@ def movimientos():
 
     cursor = con.cursor()
 
-    sql = """SELECT * FROM movimientos"""  
+    sql = """SELECT * FROM movimientos """  
     
     cursor.execute(sql)
-    con.close()
+     registros = cursor.fetchall()
+
 
     return render_template("movimientos.html", movs=registros)
