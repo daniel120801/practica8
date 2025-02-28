@@ -79,8 +79,6 @@ def etiquetas():
     return render_template("etiquetas.html", etiquetas=registros)
 
 @app.route("/movimientos")
-# Usar cuando solo se quiera usar CORS en rutas específicas
-# @cross_origin()
 def movimientos():
     if not con.is_connected():
         con.reconnect()
@@ -92,5 +90,5 @@ def movimientos():
     cursor.execute(sql)
     registros = cursor.fetchall()
 
-
+    print(registros)
     return render_template("movimientos.html", movs=registros)
