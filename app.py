@@ -43,7 +43,7 @@ def app2():
 
     con.close()
 
-    return "<h5>Hola, soy la view app</h5>"
+    return "<h5>Hola, soy la view app 2.0</h5>"
 
 @app.route("/productos")
 def productos():
