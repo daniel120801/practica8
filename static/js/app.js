@@ -18,20 +18,14 @@ app.config(function ($routeProvider, $locationProvider) {
     .when("/", {
         templateUrl: "/app"
     })
-    .when("/productos", {
-        templateUrl: "/productos"
+    .when("/ahorros", {
+        templateUrl: "/ahorros"
     })
-    .when("/alumnos", {
-        templateUrl: "/alumnos"
+    .when("/etiquetas", {
+        templateUrl: "/etiquetas"
     })
-    .when("/ventas", {
-        templateUrl: "/ventas"
-    })
-    .when("/reportes", {
-        templateUrl: "/reportes"
-    })
-    .when("/notificaciones", {
-        templateUrl: "/notificaciones"
+    .when("/movimientos", {
+        templateUrl: "/movimientos"
     })
     .otherwise({
         redirectTo: "/"
