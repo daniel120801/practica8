@@ -83,12 +83,11 @@ def movimientos():
     if not con.is_connected():
         con.reconnect()
 
-    cursor = con.cursor()
+    cursor = con.cursor(dictionary=True)
 
     sql = """SELECT * FROM movimientos """  
     
     cursor.execute(sql)
     registros = cursor.fetchall()
 
-    print(registros)
     return render_template("movimientos.html", movs=registros)
