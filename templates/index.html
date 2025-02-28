@@ -76,34 +76,29 @@
     <script src="{{ url_for("static", filename="js/app.js") }}"></script>
 </head>
 <body>
-    <div class="float-end mt-1 me-3" style="font-size: 1.25rem;">
+    <div class="d-flex justify-content-center align-items-center k mt-1 me-3" style="font-size: 1.25rem;">
         <i class="bi bi-clock"></i>
          {{ '{{ angularjsHora }}' }}
     </div>
 
     <!-- rutas, solo cambiar el nombre no el "#/" -->
-    <ul class="app-menu nav nav-underline justify-content-center">
+    <ul class="app-menu nav nav-underline d-flex flex-column flex-lg-row justify-content-center">
         <li class="nav-item">
             <a class="nav-link" href="#/">Inicio</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#/productos">Productos</a>
+            <a class="nav-link" href="#/ahorros">Ahorros</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#/alumnos">Alumnos</a>
+            <a class="nav-link" href="#/etiquetas">Etiquetas</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#/ventas">Ventas</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#/reportes">Reportes</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#/notificaciones">Notificaciones</a>
+            <a class="nav-link" href="#/movimientos">Movimientos</a>
         </li>
     </ul>
 
-    <div id="appContent" class="app-content container p-3 {{ '{{ slide }}' }}" ng-view></div>
+
+    <div id="appContent" class=" mt-2 app-content card border-danger container p-3 {{ '{{ slide }}' }}" ng-view></div>
 
     <div class="app-float-button bg-body" style="z-index: 2; position: fixed; bottom: 5px; left: 5px; cursor: pointer;">
         <ul class="list-group list-group-horizontal">
